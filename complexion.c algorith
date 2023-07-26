@@ -1,0 +1,18 @@
+#include <stdio.h>
+void countdown(int count)
+{
+    if(count <= 0)
+    {
+        printf("done");
+    }
+    else{
+        printf("%d",count);
+        countdown(count -1);
+    }
+    
+}
+void countdown(int);
+int main()
+{
+    countdown(5);
+}
